@@ -187,7 +187,9 @@ export default class Scanner extends EventEmitter {
 		}
 
 		let video = opts.video || document.createElement('video');
-		video.setAttribute('autoplay', 'autoplay');
+		video.setAttribute('autoplay', '');
+    video.setAttribute('playsinline', '');
+		video.setAttribute('muted', '');
 
 		return video;
 	}

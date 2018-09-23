@@ -30,21 +30,16 @@ export default class Camera {
 	}
 
 	async start() {
-		let constraints: any = {
-			audio: false,
-			video: {
-				mandatory: {
-					sourceId: this.id,
-					minWidth: 600,
-					maxWidth: 800,
-					minAspectRatio: 1.6
-				},
-				optional: []
-			}
-		};
-
+	
 		this._stream = await Camera.wrapErrors( async () => {
-			return await navigator.mediaDevices.getUserMedia( constraints );
+			return await navigator.mediaDevices.getUserMedia({
+				audio: false,
+				video: {
+					deviceId: {
+						exact: this.id
+					}
+				}
+			} );
 		} );
 
 		return this._stream;
