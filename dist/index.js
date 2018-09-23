@@ -1,1 +1,1 @@
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),require("regenerator-runtime/runtime"),require("webrtc-adapter");var a=require("./Camera");exports.Camera=a.default;var u=require("./Scanner");exports.Scanner=u.default;
+"use strict";Object.defineProperty(exports,"__esModule",{value:!0}),require("regenerator-runtime/runtime"),require("webrtc-adapter");var m=require("./Camera");exports.Camera=m.default;var q=require("./Scanner");exports.Scanner=q.default;
