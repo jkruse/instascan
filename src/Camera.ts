@@ -68,7 +68,7 @@ export default class Camera {
 	}
 
 	static async ensureAccess() {
-		return await this.wrapErrors( async () => {
+		return await Camera.wrapErrors( async () => {
 			let access = await navigator.mediaDevices.getUserMedia( { video: true } );
 			for ( let stream of access.getVideoTracks() ) {
 				stream.stop();
