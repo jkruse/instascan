@@ -3,8 +3,9 @@ import "webrtc-adapter";
 
 import Camera from "./Camera";
 import Scanner from "./Scanner";
+import EnvironmentCamera from './EnvironmentCamera';
 
-export { Camera, Scanner };
+export { Camera, Scanner, EnvironmentCamera };
 
 export interface ScannerOptions {
     /**

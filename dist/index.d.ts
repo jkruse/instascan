@@ -2,7 +2,8 @@ import "regenerator-runtime/runtime";
 import "webrtc-adapter";
 import Camera from "./Camera";
 import Scanner from "./Scanner";
-export { Camera, Scanner };
+import EnvironmentCamera from './EnvironmentCamera';
+export { Camera, Scanner, EnvironmentCamera };
 export interface ScannerOptions {
     /**
      * The camera to use for scanning
